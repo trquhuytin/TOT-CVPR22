@@ -1,10 +1,8 @@
 # Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering (CVPR 2022)
 
-This repository contains the official implementation of our CVPR 2022 paper (https://openaccess.thecvf.com/content/CVPR2022/papers/Kumar_Unsupervised_Action_Segmentation_by_Joint_Representation_Learning_and_Online_Clustering_CVPR_2022_paper.pdf)
+This repository contains the official implementation of our CVPR 2022 paper (https://openaccess.thecvf.com/content/CVPR2022/papers/Kumar_Unsupervised_Action_Segmentation_by_Joint_Representation_Learning_and_Online_Clustering_CVPR_2022_paper.pdf).
 
-If you use the code, please cite
-
-
+If you use the code, please cite our paper:
 ```
 @inproceedings{kumar2022unsupervised,
   title={Unsupervised action segmentation by joint representation learning and online clustering},
@@ -14,16 +12,17 @@ If you use the code, please cite
   year={2022}
 }
 ```
+For our recent works, please check out our research page (https://retrocausal.ai/research/).
 
 #### Folders
-for each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
+For each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
 
 > features/  
 > groundTruth/  
 > mapping/  
 > models/
 
-during testing will be created several folders which by default stored at --dataset_root, change if necessary 
+During testing will be created several folders which by default stored at --dataset_root, change if necessary 
 --output_dir 
 
 > segmentation/  
@@ -73,15 +72,15 @@ python data_utils/YTI_utils/yti_train.py
 python data_utils/BF_utils/bf_train.py
 ```
 
-#### Number of Subactions (K)
+## Number of Subactions (K)
 
-##### 50 Salads
+#### 50 Salads
 | Granularity level    | # subactions (K) |
 | -------------------- | ---------------- |
 |        Eval          |       12         |
 |        Mid           |       19         |
 
-##### YouTube Instructions
+#### YouTube Instructions
 | Activity class name  | # subactions (K) |
 | -------------------- | ---------------- |
 |        Changing tire |       11         |
@@ -90,7 +89,7 @@ python data_utils/BF_utils/bf_train.py
 |        Jump car      |       12         |
 |        Repot plant   |        8         |
 
-##### Breakfast
+#### Breakfast
 | Activity class name  | # subactions (K) |
 | -------------------- | ---------------- |
 |        Coffe         |        7         |
