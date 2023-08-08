@@ -47,6 +47,11 @@ During testing will be created several folders which by default stored at --data
 - Breakfast features [link](https://drive.google.com/file/d/1DbYnU2GBb68CxEt2I50QZm17KGYKNR1L)
 - Breakfast ground truth [link](https://drive.google.com/file/d/1RO8lrvLy4bVaxZ7C62R0jVQtclXibLXU)
 
+#### Desktop Assembly 
+
+- Desktop Assembly features [link](https://drive.google.com/drive/folders/1t-dUAcY4QMbGt6xHEGriOMgSl5TRBXFM?usp=drive_link)
+- Desktop Assembly ground truth [link](https://drive.google.com/drive/folders/1Ql3PwcR24hgjxzCX4XGvcQfVlhekqZu1?usp=drive_link)
+
 ## Training
 
 #### 50 Salads
@@ -70,6 +75,12 @@ python data_utils/YTI_utils/yti_train.py
     use 'all' to train/test on all actions in series
 ```
 python data_utils/BF_utils/bf_train.py
+```
+#### Desktop Assembly
+
+- actions: '2020' =='all';
+```
+python data_utils/DA_utils/da_train.py
 ```
 
 ## Number of Subactions (K)
@@ -102,4 +113,8 @@ python data_utils/BF_utils/bf_train.py
 |        Friedegg      |        9         |
 |        Salat         |        8         |
 |        Pancake       |       14         |
-
+#### Desktop Assembly
+| Version    | # subactions (K) |
+| -------------------- | ---------------- |
+|        Fixed Order   |       23         |
+|         
