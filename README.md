@@ -20,6 +20,7 @@ For our recent works, please check out our research page (https://retrocausal.ai
 
 #### Enviroment Setup
 
+
 #### Folders
 For each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
 
@@ -81,6 +82,9 @@ python data_utils/BF_utils/bf_train.py
 ```
 python data_utils/DA_utils/da_train.py
 ```
+
+## Testing
+
 
 ## Number of Subactions (K)
 
