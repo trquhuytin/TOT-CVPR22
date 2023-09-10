@@ -1,5 +1,6 @@
 # Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering (CVPR 2022)
 
+## Overview
 This repository contains the official implementation of our CVPR 2022 paper (https://openaccess.thecvf.com/content/CVPR2022/papers/Kumar_Unsupervised_Action_Segmentation_by_Joint_Representation_Learning_and_Online_Clustering_CVPR_2022_paper.pdf).
 
 If you use the code, please cite our paper:
@@ -13,6 +14,11 @@ If you use the code, please cite our paper:
 }
 ```
 For our recent works, please check out our research page (https://retrocausal.ai/research/).
+
+
+## Installation
+
+#### Enviroment Setup
 
 #### Folders
 For each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
@@ -30,7 +36,6 @@ During testing will be created several folders which by default stored at --data
 > logs/  
 
 
-
 ## Datasets
 
 #### 50 Salads
@@ -38,31 +43,27 @@ During testing will be created several folders which by default stored at --data
 - 50Salads ground truth [link](https://drive.google.com/open?id=1mzcN9pz1tKygklQOiWI7iEvcJ1vJfU3R)
 
 #### YouTube Instructions
-
 - YouTube Instructions features [link](https://drive.google.com/open?id=1HyF3_bwWgz1QNgzLvN4J66TJVsQTYFTa) 
 - YouTube Instructions ground truth [link](https://drive.google.com/open?id=1ENgdHvwHj2vFwflVXosCkCVP9mfLL5lP)
 
 #### Breakfast
-
 - Breakfast features [link](https://drive.google.com/file/d/1DbYnU2GBb68CxEt2I50QZm17KGYKNR1L)
 - Breakfast ground truth [link](https://drive.google.com/file/d/1RO8lrvLy4bVaxZ7C62R0jVQtclXibLXU)
 
 #### Desktop Assembly 
-
 - Desktop Assembly features [link](https://drive.google.com/drive/folders/1t-dUAcY4QMbGt6xHEGriOMgSl5TRBXFM?usp=drive_link)
 - Desktop Assembly ground truth [link](https://drive.google.com/drive/folders/1Ql3PwcR24hgjxzCX4XGvcQfVlhekqZu1?usp=drive_link)
+
 
 ## Training
 
 #### 50 Salads
-
 - actions: 'rgb' =='all';
 ```
 python data_utils/FS_utils/fs_train.py
 ```
 
 #### YouTube Instructions
-
 - actions: 'changing_tire', 'coffee', 'jump_car', 'cpr', 'repot'
     use 'all' to train/test on all actions in series
 ```
@@ -70,14 +71,12 @@ python data_utils/YTI_utils/yti_train.py
 ```
 
 #### Breakfast
-
 - actions: 'coffee', 'cereals', 'tea', 'milk', 'juice', 'sanwich', 'scrambledegg', 'friedegg', 'salat', 'pancake'
     use 'all' to train/test on all actions in series
 ```
 python data_utils/BF_utils/bf_train.py
 ```
 #### Desktop Assembly
-
 - actions: '2020' =='all';
 ```
 python data_utils/DA_utils/da_train.py
