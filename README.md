@@ -13,6 +13,7 @@ If you use the code, please cite our paper:
   year={2022}
 }
 ```
+
 For our recent works, please check out our research page (https://retrocausal.ai/research/).
 
 
@@ -23,7 +24,6 @@ For our recent works, please check out our research page (https://retrocausal.ai
 
 #### Folders
 For each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
-
 > features/  
 > groundTruth/  
 > mapping/  
@@ -31,7 +31,6 @@ For each dataset create separate folder (specify path --dataset_root) where the 
 
 During testing will be created several folders which by default stored at --dataset_root, change if necessary 
 --output_dir 
-
 > segmentation/  
 > likelihood/  
 > logs/  
