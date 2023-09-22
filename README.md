@@ -83,7 +83,8 @@ python data_utils/DA_utils/da_train.py
 
 ## Testing
 To Evaluate the model, first set the model path in Test.py file for dataset. 
-```opt.model = 'your model path '
+```
+ opt.loaded_model_name = 'model path'
 ```
 #### 50 Salads
 - actions: 'rgb' =='all';
