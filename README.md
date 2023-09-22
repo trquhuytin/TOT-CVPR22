@@ -80,6 +80,37 @@ python data_utils/BF_utils/bf_train.py
 python data_utils/DA_utils/da_train.py
 ```
 
+
+## Testing
+To Evaluate the model, first set the model path in Test.py file for dataset. 
+```opt.model = 'your model path '
+```
+#### 50 Salads
+- actions: 'rgb' =='all';
+```
+python data_utils/FS_utils/fs_test.py
+```
+
+#### YouTube Instructions
+- actions: 'changing_tire', 'coffee', 'jump_car', 'cpr', 'repot'
+    use 'all' to train/test on all actions in series
+```
+python data_utils/YTI_utils/yti_test.py
+```
+
+#### Breakfast
+- actions: 'coffee', 'cereals', 'tea', 'milk', 'juice', 'sanwich', 'scrambledegg', 'friedegg', 'salat', 'pancake'
+    use 'all' to train/test on all actions in series
+```
+python data_utils/BF_utils/bf_test.py
+```
+
+#### Desktop Assembly
+- actions: '2020' =='all';
+```
+python data_utils/DA_utils/da_test.py
+```
+
 ## Number of Subactions (K)
 
 #### 50 Salads
