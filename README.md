@@ -18,7 +18,14 @@ For our recent works, please check out our research page (https://retrocausal.ai
 
 
 ## Installation
-
+### Create Conda environment 
+```
+ conda create -n tot
+```
+### install packages from requirement.txt
+```
+ pip install -r requirements.txt
+```
 #### Folders
 For each dataset create separate folder (specify path --dataset_root) where the inner folders structure is as following:
 > features/  
