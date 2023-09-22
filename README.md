@@ -22,7 +22,7 @@ For our recent works, please check out our research page (https://retrocausal.ai
 ```
  conda create -n tot
 ```
-### install packages from requirement.txt
+### Install packages from requirements file
 ```
  pip install -r requirements.txt
 ```
